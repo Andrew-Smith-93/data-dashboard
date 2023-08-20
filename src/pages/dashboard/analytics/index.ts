@@ -1,1 +1,1 @@
-import { default } from './Analytics'
+export { default } from './Analytics'
