@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Dashboard from '@/pages/dashboard'
 import SideMenu from '@/components/SideMenu/SideMenu'
 import Header from '@/components/Header/Header'
+import Login from '@/components/Login/Login'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,6 +23,7 @@ export default function Home() {
         <Header/>
         <SideMenu/>
         <Dashboard />
+        <Login />
       </main>
     </>
   )
