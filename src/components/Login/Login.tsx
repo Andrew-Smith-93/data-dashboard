@@ -1,22 +1,17 @@
 import { useSession, signIn, signOut } from "next-auth/react"
-import { Avatar } from "@mui/material";
+import Button from "@mui/material/Button";
 
-const Login= () => {
+const Login = () => {
     const { data: session } = useSession();
 
     if(session) {
         return <>
-        Signed in as {session?.user?.email} <br/>
-        <p>Welcome {session?.user?.name}</p>
-        <Avatar alt={session?.user?.name} src= {session?.user?.image} />
-        <button onClick={() => signOut()}>Sign out</button>
+            <Button variant='contained' color={'error'} onClick={() => signOut()}>Sign out</Button>
         </>
     }
-    return <>
-    Not signed in <br/>
-    <button onClick={() => signIn()}>Sign in</button>
-    </>
-
+        return <>
+            <Button variant='contained' onClick={() => signIn()}>Sign in</Button>
+        </>
 }
 
-export default Login
+export default Login;

@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const SideMenu = () => {
     return (
         <ul>
             <li>Analytics</li>
-            <li>Settings</li>
             <li>Profile</li>
+            <li>Settings</li>
         </ul>
     )
 }
 
-export default SideMenu
+export default SideMenu;
