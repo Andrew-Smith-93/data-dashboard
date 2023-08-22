@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     return (
         <>
             <Head>
-                <title>DataSoft - Dashboard</title>
+                <title>AdminIQ - Dashboard</title>
                 <meta name="description" content="Data Dashboard" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
